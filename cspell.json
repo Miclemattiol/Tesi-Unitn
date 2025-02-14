@@ -9,12 +9,27 @@
     "@cspell/dict-markdown/cspell-ext.json",
     "@cspell/dict-npm/cspell-ext.json"
   ],
-  "ignorePaths": ["**/build/", "**/node_modules/", "**/package-lock.json"],
+  "ignorePaths": [
+    "**/build/",
+    "**/node_modules/",
+    "**/package-lock.json",
+    "package.json",
+    "README.md",
+    "bibliography.bib",
+    "cspell.json",
+    "latexmkrc",
+    "LICENSE"
+  ],
+  "ignoreRegExpList": ["/%.*$/gm"],
   "words": [
+    "Author",
     "booktitle",
     "gamification",
     "howpublished",
     "latexmk",
+    "Mattiolo",
+    "Michael",
+    "misc",
     "nonstopmode",
     "outdir",
     "postbuild",
