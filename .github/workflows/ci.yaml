@@ -62,4 +62,4 @@ jobs:
           title: ${{ startsWith(github.ref , 'refs/tags/v') && github.ref_name || 'Nightly' }}
           files: |
             LICENSE
-            surname_name_computer_science_2023_2024.pdf
+            Mattiolo_Michael_computer_science_2024_2025.pdf
