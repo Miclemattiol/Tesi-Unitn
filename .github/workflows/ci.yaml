@@ -25,6 +25,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure Git safe directory
+        run: |
+          git config --global --add safe.directory $(pwd)
+
       - name: Check Git tag format
         if: startsWith(github.ref_name, 'v')
         env:
@@ -55,6 +59,7 @@ jobs:
 
       - name: Ottieni la prossima versione
         id: get_version
+        shell: bash
         run: |
           current_date=$(date '+%Y-%m-%d')
           last=$(git tag --list "Tesi-${current_date}-*" | sed "s/Tesi-${current_date}-//" | sort -n | tail -n 1)
@@ -63,6 +68,7 @@ jobs:
           else
             next=$((last+1))
           fi
+          # Using bash's printf -v now that we specify shell: bash
           printf -v next "%03d" "$next"
           version="Tesi-${current_date}-${next}"
           echo "La prossima versione è $version"
