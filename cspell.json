@@ -20,19 +20,36 @@
     "latexmkrc",
     "LICENSE"
   ],
-  "ignoreRegExpList": ["/%.*$/gm"],
+  "ignoreRegExpList": [
+    "/%.*$/gm"
+  ],
   "words": [
     "Author",
     "booktitle",
+    "built",
+    "Cardboard",
+    "controller",
+    "Epic",
+    "Games",
     "gamification",
+    "gesture",
     "howpublished",
+    "immersiva",
+    "immersività",
+    "interaction",
     "latexmk",
     "Mattiolo",
     "Michael",
     "misc",
     "nonstopmode",
+    "Oculus",
     "outdir",
     "postbuild",
-    "Unity"
+    "sottofasi",
+    "standalone",
+    "tethered",
+    "Toolkit",
+    "Unity",
+    "Unreal"
   ]
 }

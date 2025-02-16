@@ -18,7 +18,7 @@
 % Letter
 \usepackage[utf8]{inputenc}
 % Language
-\usepackage[english]{babel}
+\usepackage[italian]{babel}
 % PDF/A
 \usepackage[a-1b]{pdfx}
 % Image
@@ -46,7 +46,7 @@
   \clearpage
 
   % Acknowledgements
-  \input{etc/acknowledgements}
+  \input{etc/ringraziamenti.tex}
   \clearpage
   \pagestyle{plain}
 
@@ -71,13 +71,20 @@
   \titlespacing*{\subsubsection}{0pt}{0.05in}{0.02in}
 
   % Abstract
-  \input{etc/abstract.tex}
+  \input{etc/sommario.tex}
 
   % Chapters
-  \input{chapters/introduzione.tex}
+  % \input{chapters/introduzione.tex}
+  \input{chapters/sviluppo.tex}
+
+  % Examples
+  \input{chapters/examples.tex}
+
+  % Citazioni
+  \input{chapters/citazioni.tex}
 
   % Conclusions
-  \input{etc/conclusions.tex}
+  \input{etc/conclusione.tex}
 
   \endgroup
 

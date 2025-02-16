@@ -1,0 +1,59 @@
+\section{Software e Hardware}
+\label{sec:software-hardware}
+
+La prima scelta affrontata è stata il motore grafico. Questa scelta è molto
+importante durante la progettazione e lo sviluppo dell'applicazione.\\ Il motore
+grafico è il software che permette di astrarre la creazione di ambienti virtuali
+permettendo allo sviluppatore di concentrarsi principalmente sullo sviluppo
+delle meccaniche dell'applicazione, proprio da qui deriva l'importanza di una scelta
+che compatibile con le esigenze di sviluppo e di performance dell'applicazione.\\
+I principali motori grafici disponibili sono:
+
+\begin{itemize}
+  \item \textbf{Unity3D}: è uno dei motori grafici più utilizzati nello sviluppo
+    di applicazioni su spazio bidimensionale e tridimensionale. Presenta una
+    curva di apprendimento molto bassa, permettendo a sviluppatori meno esperti di
+    imparare più rapidamente lo sviluppo delle applicazioni tramite il linguaggio
+    di programmazione C\# . Nonostante la sua semplicità Unity3D rimane un
+    motore molto potente e flessibile che permette lo sviluppo di qualsiasi tipo
+    di applicazione. Inoltre grazie al suo store di risorse, Unity Asset Store, è
+    possibile usufruire di una vasta gamma di risorse utili a velocizzare il processo
+    di sviluppo delle applicazioni.
+
+  \item \textbf{Unreal Engine}: è un motore grafico sviluppato da Epic Games,
+    utilizzato principalmente nello sviluppo di videogiochi e applicazioni 3D. È
+    un motore grafico molto potente e flessibile che vanta una serie di funzionalità
+    molto avanzate per permettere lo sviluppo di funzionalità complesse riducendo
+    il codice necessario attraverso l'utilizzo di un sistema di programmazione visuale
+    chiamato Blueprints, affiancato allo sviluppo tramite il linguaggio di
+    programmazione C++. A differenza di Unity3D, Unreal Engine presenta una
+    curva di apprendimento molto ripida, rendendolo meno adatto a progetti di dimensioni
+    ristrette, o a sviluppatori non esperti.
+\end{itemize}
+
+In aggiunta alla scelta del motore grafico è stato necessario scegliere gli
+strumenti di sviluppo (SDK) da utilizzare. Questa scelta risulta importante nella
+selezione della piattaforma di utilizzo dell'applicazione. In questo tra caso le
+opzioni disponibili erano presenti:
+\begin{itemize}
+  \item \textbf{Meta SDK} (ex Oculus): è uno dei principali SDK per lo sviluppo di
+    applicazioni per i dispositivi Meta. Questo SDK permette di sfruttare tutte
+    le funzionalità offerte dai dispositivi Meta, permettendo lo sviluppo di applicazioni
+    che sfruttino al meglio le funzionalità offerte dai dispositivi.
+
+  \item \textbf{Unity XR interaction Toolkit}: è un toolkit sviluppato da Unity Technologies
+    che permette di sviluppare applicazioni per la realtà virtuale compatibili con
+    diversi dispositivi. Questo toolkit permette di utilizzare componenti
+    standardizzati per lo sviluppo di applicazioni, permettendo di creare applicazioni
+    compatibili con diversi dispositivi senza dover riscrivere il codice per ogni
+    dispositivo.
+\end{itemize}
+
+Siccome l'applicazione dovrà essere eseguita su un dispositivo non
+necessariamente collegato ad un computer, ho pensato che i migliori dispositivi per
+l'utilizzo dell'applicazione fossero i visori Meta Quest che oltre ad essere indipendenti,
+risultano anche essere tra i più acquistati sul mercato. La scelta degli strumenti
+di sviluppo è quindi ricaduta sul Meta XR SDK così da poter utilizzare al massimo
+le funzionalità dei visori, tra cui in particolare la realtà estesa. Infine per praticità
+ho scelto di utilizzare Unity3D come motore grafico per la semplicità di installazione
+del Meta XR SDK, e della mia conoscenza pregressa di questo motore.
